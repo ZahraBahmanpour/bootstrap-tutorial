@@ -66,7 +66,7 @@
             <p class="lead my-4 text-muted">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
             </p>
-            <a class="btn btn-secondary btn-lg">Buy Now!</a>
+            <a href="#sidebar" data-bs-toggle="offcanvas" class="btn btn-secondary btn-lg">Buy Now!</a>
           </div>
           <div class="col-md-5 text-center d-none d-md-block">
             <img
@@ -202,6 +202,17 @@
             <button type="button" class="btn btn-primary">Save changes</button>
           </div>
         </div>
+      </div>
+    </div>
+
+    <!--Sidebar-->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar" aria-labelledby="offcanvasLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasLabel">Cart</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        Added to Cart
       </div>
     </div>
     <script
