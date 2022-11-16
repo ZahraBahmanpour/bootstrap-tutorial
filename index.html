@@ -17,9 +17,11 @@
     <!--Navbar-->
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container">
+        <span data-bs-toggle="tooltip" data-bs-placement="bottom" title="This is book">
         <a class="navbar-brand text-secondary" href="#"
           ><i class="bi bi-book-half"></i><span class="ms-1">Net Ninja Pro - the Book</span></a
         >
+      </span>
         <button
           class="navbar-toggler"
           type="button"
@@ -168,5 +170,9 @@
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"
   ></script>
+  <script>
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+  </script>
   </body>
 </html>
